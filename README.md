@@ -32,7 +32,7 @@ All written Artefacts in a zip archive or on a GitHub repository :
 to build it:
 `docker build -t linux_tweet_app .`
 
-** if sanctions and restrictions are bothering you, you can download the "nginx:latest" image from the below link and add it to your host  via "docker load" command. **
+**if sanctions and restrictions are bothering you, you can download the "nginx:latest" image from the below link and add it to your host  via "docker load" command.**
 
 https://devpob-sample-project-nginx.s3.ir-thr-at1.arvanstorage.ir/nginx-latest.tar?versionId=
 
