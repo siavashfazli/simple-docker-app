@@ -8,14 +8,16 @@ It's mostly used as a sample application for Docker 101 workshops.
 Take an existent simple web application, linux_tweet_app,
 Configure NGINX to listen on external ports 80 (HTTP) and 443 (HTTPS) and 
 direct incoming requests to the web application:
+
 a) HTTP requests should be redirected to HTTPS.
+
 b)  Define a domain name, (e.g., localhost) for the web app and use the 
-let’s encrypt agent to
-generate SSL/TLS certificates for this domain (x.y.com)
+let’s encrypt agent to generate SSL/TLS certificates for this domain (x.y.com)
 Installation and configuration of NGINX and Letsencrypt should be 
 automated as well as the deployment of the web application
 There is no automation tooling restriction but below you can find a list 
-of tools you can orient on: a) Dockerfiles
+of tools you can orient on:
+a) Dockerfiles
 b) Ansible
 c) DockerCompose
 
