@@ -1,7 +1,7 @@
 FROM nginx:latest
 
 COPY index.html /usr/share/nginx/html
-COPY linux@png /usr/share/nginx/html
+COPY linux.png /usr/share/nginx/htm
 
 EXPOSE 80 443 	
 
