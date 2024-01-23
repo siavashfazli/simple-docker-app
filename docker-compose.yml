@@ -1,6 +1,9 @@
 version: "3.9"
 services:
   web_app:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
     image: web_app:v2.0
     container_name: web_app
     volumes:
