@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  web_app:
+    image: web_app:v2.0
+    container_name: web_app
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - nginx
+  certbot:
+    image: certbot/certbot:v2.8.0
+    container_name: certbot
+    volumes:
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+    command: certonly
+    networks:
+      - nginx
+
+
+
+
+
+networks:
+  nginx:
+    external: true
