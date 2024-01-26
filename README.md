@@ -1,8 +1,10 @@
 # simple-docker-app project
 
-This is very simple NGINX website that allows a user to send a tweet. 
+# Nginx and Certbot SSL generation project, automated with Ansible. 
+In the first step, you have to get related Ansible playbooks from this repository:
 
-It's mostly used as a sample application for Docker 101 workshops. 
+https://github.com/siavashfazli/Ansible_Playbooks
+
 
 ## about the task:
 Take an existent simple web application, linux_tweet_app,
@@ -12,11 +14,12 @@ direct incoming requests to the web application:
 a) HTTP requests should be redirected to HTTPS.
 
 b)  Define a domain name, (e.g., localhost) for the web app and use the 
-let’s encrypt agent to generate SSL/TLS certificates for this domain (x.y.com)
+let’s encrypt the agent to generate SSL/TLS certificates for this domain (x.y.com)
 Installation and configuration of NGINX and Letsencrypt should be 
 automated as well as the deployment of the web application
 There is no automation tooling restriction but below you can find a list 
 of tools you can orient on:
+
 a) Dockerfiles
 b) Ansible
 c) DockerCompose
@@ -30,12 +33,6 @@ All written Artefacts in a zip archive or on a GitHub repository :
 2. Dockerfiles
 3. any other glue code in any possible script/shell/bash language
 
-## about image:
-to build it:
-`docker build -t linux_tweet_app .`
-
-**if sanctions and restrictions are bothering you, you can download the "nginx:latest" image from the below link and add it to your host using "docker load" command.**
-
-https://devpob-sample-project-nginx.s3.ir-thr-at1.arvanstorage.ir/nginx-latest.tar?versionId=
+This README file has been corrected by Grammarly:
 
 
