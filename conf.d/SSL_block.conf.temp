@@ -1,0 +1,5 @@
+server {
+	listen 443;
+        ssl_certificate /etc/nginx/ssl/live/siavashfazli.ir/fullchain.pem;
+        ssl_certificate_key /etc/nginx/ssl/live/siavashfazli.ir/privkey.pem;
+}
