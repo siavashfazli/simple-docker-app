@@ -1,5 +1,13 @@
 server {
-	listen 443;
-        ssl_certificate /etc/nginx/ssl/live/siavashfazli.ir/fullchain.pem;
-        ssl_certificate_key /etc/nginx/ssl/live/siavashfazli.ir/privkey.pem;
+    listen 443;
+
+    server_name mydigibazi.ir;
+
+    ssl_certificate /etc/nginx/ssl/live/mydigibazi.ir/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/live/mydigibazi.ir/privkey.pem;
+    
+    location / {
+        root /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
 }
