@@ -17,7 +17,7 @@ services:
     networks:
       - nginx
   certbot:
-    image: certbot/certbot:v2.8.0
+    image: docker.arvancloud.ir/certbot/certbot:v2.8.0
     container_name: certbot
     volumes:
       - ./certbot/www/:/var/www/certbot/:rw
@@ -25,10 +25,6 @@ services:
     command: certonly
     networks:
       - nginx
-
-
-
-
 
 networks:
   nginx:
